@@ -8,6 +8,7 @@
     "ava",
     "lerna",
     "nyc",
+    "typed-screeps",
     "typescript"
   ]
 }

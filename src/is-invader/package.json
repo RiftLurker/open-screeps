@@ -1,0 +1,33 @@
+{
+  "name": "@open-screeps/is-invader",
+  "version": "0.0.0",
+  "description": "Check if something is an Invader",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc --inlineSourceMap && nyc ava",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postcrafter/open-screeps.git"
+  },
+  "files": [
+    "**/*.{d.ts,js}"
+  ],
+  "keywords": [
+    "screeps",
+    "open-screeps"
+  ],
+  "author": "Leo \"PostCrafter\" Friedrichs <dev@postcrafter.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/postcrafter/open-screeps/issues"
+  },
+  "homepage": "https://github.com/postcrafter/open-screeps#readme",
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "nyc": "^11.3.0",
+    "typed-screeps": "^2.0.0",
+    "typescript": "^2.6.2"
+  }
+}

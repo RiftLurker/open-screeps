@@ -3,11 +3,11 @@ import test from 'ava';
 import { isInvader, USERNAME } from './index';
 
 test('USERNAME should match string "Invader"', t => {
-	t.is(USERNAME, 'Invader')
+	t.is(USERNAME, 'Invader');
 });
 
 test('Should return true for matching owner username', t => {
-	t.true(isInvader(stubCreep('Invader')))
+	t.true(isInvader(stubCreep('Invader')));
 });
 
 test.todo('Generative testing with testcheck-js for any other test cases');

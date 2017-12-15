@@ -4,6 +4,9 @@ import { isInvader, INVADER_USERNAME } from './index';
 
 declare const global: any;
 
+// @todo stub creep with sinon
+// @todo spy if .owner.username is actually accessed
+
 class StubCreep {
 	public owner: { username: string };
 	constructor(username: string) {

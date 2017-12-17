@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "clean": "rimraf **/node_modules/",
+    "clean": "rimraf **/node_modules/ **/.nyc_output/",
     "lerna": "lerna",
     "test": "lerna exec npm test",
     "postinstall": "lerna bootstrap -- --no-package-lock"

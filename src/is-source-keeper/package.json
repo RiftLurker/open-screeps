@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/postcrafter/open-screeps#readme",
   "devDependencies": {
+    "@types/screeps": "^0.0.0",
     "ava": "^0.24.0",
     "nyc": "^11.3.0",
     "typed-screeps": "^2.0.0",

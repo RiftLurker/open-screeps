@@ -5,10 +5,10 @@
   ],
   "version": "independent",
   "hoist": [
+    "@types/screeps",
     "ava",
     "lerna",
     "nyc",
-    "typed-screeps",
     "typescript"
   ]
 }

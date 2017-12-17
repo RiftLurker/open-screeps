@@ -1,6 +1,6 @@
 export const INVADER_USERNAME = 'Invader';
 
-export function isInvader(target: string | Creep): boolean | never {
+export function isInvader(target: string | Creep): boolean {
 	if (target instanceof Creep) {
 		return isInvader(target.owner.username);
 	}

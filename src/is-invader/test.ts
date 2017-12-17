@@ -38,7 +38,7 @@ test('When passing a Creep should only return true when the owner is matching IN
 	t.false(isInvader(stubCreep('Screeps')));
 });
 
-// test.todo('Generative testing with testcheck-js for any other test cases');
+test.todo('Generative testing with testcheck-js for any other test cases');
 
 function stubCreep(ownerUsername: string): Creep {
 	return new StubCreep(ownerUsername) as Creep;

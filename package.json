@@ -1,7 +1,7 @@
 {
   "name": "open-screeps",
   "version": "0.0.0",
-  "description": "a collection of screeps utilities",
+  "description": "reusable and tested building blocks for every screeps code base",
   "main": "index.js",
   "private": true,
   "scripts": {

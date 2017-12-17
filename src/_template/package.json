@@ -12,7 +12,7 @@
     "url": "git+https://github.com/postcrafter/open-screeps.git"
   },
   "files": [
-    "**/*.{d.ts,js}"
+    "index.{d.ts,js}"
   ],
   "keywords": [
     "screeps",

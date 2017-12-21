@@ -3,6 +3,9 @@
 
 This repository is a collection of useful snippets and methods that I came up with when programming for the game [screeps][screeps-website]. I'm now attempting to restructure my code and splitting it into reusable modules for everyone to enjoy, teaching myself how to work with unit tests and a monorepo in the progress.
 
+## Disclaimer
+This is still heavily work in progress while I extract modules from my code and get used to different tools. None of the modules are actually on npm yet, even though you could install them manually by cloning the repo and building them locally. The disclaimer will get removed once I've established a workflow and published the packages to npm.
+
 ## Getting started
 As this is a monorepo containing a lot of single purpose modules there is a high chance it contains something you need as well. Just check out the `src/` directory, the directory names are usually very good indicators of what the containing code does. Never the less each module has a readme file with a description of it's purpose and a short example.
 

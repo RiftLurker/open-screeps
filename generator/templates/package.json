@@ -1,7 +1,7 @@
 {
-  "name": "@open-screeps/_template",
+  "name": "@open-screeps/<%= moduleName %>",
   "version": "0.0.0",
-  "description": "_template",
+  "description": "<%= moduleDescription %>",
   "main": "index.js",
   "scripts": {
     "test": "tsc --inlineSourceMap && nyc ava",
@@ -18,12 +18,12 @@
     "screeps",
     "open-screeps"
   ],
-  "author": "Leo \"PostCrafter\" Friedrichs <dev@postcrafter.de>",
+  "author": "<%= moduleAuthor %>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/postcrafter/open-screeps/issues"
   },
-  "homepage": "https://github.com/postcrafter/open-screeps#readme",
+  "homepage": "https://github.com/postcrafter/open-screeps/src/<%= moduleName %>#readme",
   "dependencies": {
     "@types/screeps": "^0.0.0"
   },

@@ -24,8 +24,10 @@
     "url": "https://github.com/postcrafter/open-screeps/issues"
   },
   "homepage": "https://github.com/PostCrafter/open-screeps/tree/master/src/is-invader#readme",
+  "dependencies": {
+    "@types/screeps": "^0.0.0"
+  },
   "devDependencies": {
-    "@types/screeps": "^0.0.0",
     "ava": "^0.24.0",
     "nyc": "^11.3.0",
     "typescript": "^2.6.2"

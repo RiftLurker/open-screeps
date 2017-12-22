@@ -2,6 +2,10 @@
   "compilerOptions": {
     "target": "ES2015",
     "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "is-scoped": ["./types/is-scoped"]
+    },
     "declaration": false,
     "strict": true,
     "experimentalDecorators": true

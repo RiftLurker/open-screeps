@@ -1,4 +1,7 @@
-import * as Generator from 'yeoman-generator';
+import Generator = require('yeoman-generator');
+import isScoped = require('is-scoped');
+
+const notEmpty = (input: string) => input.length > 0;
 
 export = class extends Generator {
 	constructor(args: string | string[], options: {}) {
@@ -8,15 +11,23 @@ export = class extends Generator {
 		return this.prompt([
 			{
 				name: 'moduleName',
-				message: 'What do you want to name the module?',
+				message: 'name:',
+				validate(input) {
+					if (isScoped(input)) {
+						return 'the scope will be applied to the module automatically';
+					}
+					return notEmpty(input);
+				},
 			},
 			{
 				name: 'moduleDescription',
-				message: 'How do you describe the module?',
+				message: 'description:',
+				validate: notEmpty,
 			},
 			{
 				name: 'moduleAuthor',
-				message: 'What\'s your name?',
+				message: 'author:',
+				validate: notEmpty,
 			},
 		]).then(props => {
 			const vars = {

@@ -5,5 +5,8 @@
     "declaration": false,
     "strict": true,
     "experimentalDecorators": true
-  }
+  },
+  "exclude": [
+    "templates/"
+  ]
 }

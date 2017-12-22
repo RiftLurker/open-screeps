@@ -24,7 +24,6 @@
   "homepage": "https://github.com/postcrafter/open-screeps/generator#readme",
   "dependencies": {
     "@types/yeoman-generator": "^2.0.0",
-    "is-scoped": "^1.0.0",
     "yeoman-generator": "^2.0.1"
   },
   "devDependencies": {

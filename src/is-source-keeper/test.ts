@@ -36,6 +36,7 @@ test('When passing a Creep should only return true when the owner is matching SO
 	t.false(isSourceKeeper(stubCreep('PostCrafter')));
 	t.false(isSourceKeeper(stubCreep('Invader')));
 	t.false(isSourceKeeper(stubCreep('Screeps')));
+	t.false(isSourceKeeper(stubCreep('Rising')));
 });
 
 test.todo('Generative testing with testcheck-js for any other test cases');

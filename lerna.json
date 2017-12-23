@@ -18,6 +18,8 @@
     "ava",
     "lerna",
     "nyc",
+    "semantic-release",
+    "semantic-release-monorepo",
     "typescript",
     "yo"
   ]

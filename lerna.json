@@ -4,6 +4,14 @@
     "src/*"
   ],
   "version": "independent",
+  "commands": {
+    "publish": {
+      "allowBranch": "master",
+      "ignore": [
+        "*.md"
+      ]
+    }
+  },
   "hoist": [
     "@types/screeps",
     "ava",

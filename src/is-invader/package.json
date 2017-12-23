@@ -5,7 +5,6 @@
   "scripts": {
     "test": "tsc && nyc ava",
     "prepare": "npm test",
-    "prerelease": "npm test",
     "release": "semantic-release"
   },
   "repository": {

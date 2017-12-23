@@ -1,5 +1,6 @@
 {
   "name": "@open-screeps/<%= moduleName %>",
+  "version": "0.0.0-development",
   "description": "<%= moduleDescription %>",
   "main": "index.js",
   "scripts": {

@@ -1,5 +1,6 @@
 {
   "name": "@open-screeps/is-invader",
+  "version": "0.0.0-development",
   "description": "Check if something is an Invader",
   "main": "index.js",
   "scripts": {

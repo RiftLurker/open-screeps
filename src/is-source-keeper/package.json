@@ -6,7 +6,7 @@
     "test": "tsc && nyc ava",
     "prepare": "npm test",
     "prerelease": "npm test",
-    "release": "semantic-release --dry-run"
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",

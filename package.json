@@ -5,10 +5,12 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "clean": "rimraf **/node_modules/ **/.nyc_output/",
+    "commit": "git-cz",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "create": "yo ./generator",
     "lerna": "lerna",
     "test": "lerna run test",
+    "release": "lerna run release",
     "postinstall": "lerna bootstrap -- --no-package-lock"
   },
   "repository": {
@@ -25,8 +27,18 @@
   },
   "homepage": "https://github.com/postcrafter/open-screeps#readme",
   "devDependencies": {
+    "@commitlint/cli": "^5.2.6",
+    "@commitlint/config-conventional": "^5.2.3",
+    "@commitlint/config-lerna-scopes": "^5.2.6",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
     "lerna": "^2.5.1",
-    "rimraf": "^2.6.2",
     "yo": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

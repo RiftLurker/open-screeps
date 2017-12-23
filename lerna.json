@@ -15,9 +15,17 @@
   },
   "hoist": [
     "@types/screeps",
+    "@commitlint/cli",
+    "@commitlint/config-conventional",
+    "@commitlint/config-lerna-scopes",
     "ava",
     "lerna",
+    "commitizen",
+    "cz-conventional-changelog",
+    "husky",
     "nyc",
+    "semantic-release",
+    "semantic-release-monorepo",
     "typescript",
     "yo"
   ]

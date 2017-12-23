@@ -1,11 +1,12 @@
 {
   "name": "@open-screeps/is-invader",
-  "version": "0.0.0",
   "description": "Check if something is an Invader",
   "main": "index.js",
   "scripts": {
     "test": "tsc && nyc ava",
-    "prepare": "tsc"
+    "prepare": "npm test",
+    "prerelease": "npm test",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,17 @@
   "devDependencies": {
     "ava": "^0.24.0",
     "nyc": "^11.3.0",
+    "semantic-release": "^11.0.2",
+    "semantic-release-monorepo": "^3.1.0",
     "typescript": "^2.6.2"
+  },
+  "release": {
+    "analyzeCommits": "semantic-release-monorepo",
+    "generateNotes": "semantic-release-monorepo",
+    "getLastRelease": "semantic-release-monorepo",
+    "publish": [
+      "@semantic-release/npm",
+      "semantic-release-monorepo/github"
+    ]
   }
 }

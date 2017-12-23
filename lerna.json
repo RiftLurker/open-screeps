@@ -21,6 +21,7 @@
     "ava",
     "lerna",
     "commitizen",
+    "condition-circle",
     "cz-conventional-changelog",
     "husky",
     "nyc",

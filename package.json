@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf **/node_modules/ **/.nyc_output/",
     "lerna": "lerna",
-    "test": "lerna exec npm test",
+    "test": "lerna run test",
     "postinstall": "lerna bootstrap -- --no-package-lock"
   },
   "repository": {

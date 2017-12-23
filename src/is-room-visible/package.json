@@ -1,5 +1,6 @@
 {
   "name": "@open-screeps/is-room-visible",
+  "version": "0.0.0-development",
   "description": "Check whether a room is currently visible",
   "main": "index.js",
   "scripts": {

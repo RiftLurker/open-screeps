@@ -1,5 +1,6 @@
 {
   "name": "@open-screeps/is-source-keeper",
+  "version": "0.0.0-development",
   "description": "Check is something is a Source Keeper",
   "main": "index.js",
   "scripts": {

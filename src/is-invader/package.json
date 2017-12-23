@@ -36,6 +36,9 @@
     "semantic-release-monorepo": "^3.1.0",
     "typescript": "^2.6.2"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "release": {
     "verifyConditions": "condition-circle",
     "analyzeCommits": "semantic-release-monorepo",

@@ -1,0 +1,52 @@
+{
+  "name": "@open-screeps/is-room-visible",
+  "description": "Check whether a room is currently visible",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && nyc ava",
+    "prepare": "npm test",
+    "prerelease": "npm test",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postcrafter/open-screeps.git"
+  },
+  "files": [
+    "index.{d.ts,js,js.map}"
+  ],
+  "keywords": [
+    "screeps",
+    "open-screeps"
+  ],
+  "author": "Leo &#34;PostCrafter&#34; Friedrichs &lt;dev@postcrafter.de&gt;",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/postcrafter/open-screeps/issues"
+  },
+  "homepage": "https://github.com/postcrafter/open-screeps/src/is-room-visible#readme",
+  "dependencies": {
+    "@types/screeps": "^0.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "condition-circle": "^2.0.1",
+    "nyc": "^11.3.0",
+    "semantic-release": "^11.0.2",
+    "semantic-release-monorepo": "^3.1.0",
+    "typescript": "^2.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "verifyConditions": "condition-circle",
+    "analyzeCommits": "semantic-release-monorepo",
+    "generateNotes": "semantic-release-monorepo",
+    "getLastRelease": "semantic-release-monorepo",
+    "publish": [
+      "@semantic-release/npm",
+      "semantic-release-monorepo/github"
+    ]
+  }
+}

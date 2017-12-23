@@ -15,7 +15,7 @@ const sourceKeepers = invaders.filter(isSourceKeeper);
 ```
 
 ## Related
-- [is-invader](../is-invader/)
+- [is-invader](https://github.com/PostCrafter/open-screeps/tree/master/src/is-invader)
 
 ## License
 [MIT](../../license.md)

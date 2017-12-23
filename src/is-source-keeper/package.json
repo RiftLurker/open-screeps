@@ -4,7 +4,7 @@
   "description": "Check is something is a Source Keeper",
   "main": "index.js",
   "scripts": {
-    "test": "tsc --inlineSourceMap && nyc ava",
+    "test": "tsc && nyc ava",
     "prepare": "tsc"
   },
   "repository": {
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/postcrafter/open-screeps.git"
   },
   "files": [
-    "index.{d.ts,js}"
+    "index.{d.ts,js,js.map}"
   ],
   "keywords": [
     "screeps",

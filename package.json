@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "clean": "rimraf **/node_modules/ **/.nyc_output/",
+    "create": "yo ./generator",
     "lerna": "lerna",
     "test": "lerna run test",
     "postinstall": "lerna bootstrap -- --no-package-lock"
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/postcrafter/open-screeps#readme",
   "devDependencies": {
     "lerna": "^2.5.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "yo": "^2.0.0"
   }
 }

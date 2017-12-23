@@ -1,0 +1,32 @@
+{
+  "name": "@open-screeps/generator",
+  "version": "0.0.0",
+  "description": "a yeoman generator to scaffold open-screeps modules",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postcrafter/open-screeps.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "open-screeps"
+  ],
+  "author": "Leo \"PostCrafter\" Friedrichs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/postcrafter/open-screeps/issues"
+  },
+  "homepage": "https://github.com/postcrafter/open-screeps/generator#readme",
+  "dependencies": {
+    "@types/yeoman-generator": "^2.0.0",
+    "yeoman-generator": "^2.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}

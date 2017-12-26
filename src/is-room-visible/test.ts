@@ -4,9 +4,6 @@ import { isRoomVisible } from './index';
 
 declare const global: any;
 
-// @todo stub creep with sinon
-// @todo spy if .owner.username is actually accessed
-
 function stubGame(...rooms: string[]) {
 	type RoomsStub = {
 		[roomName: string]: boolean;

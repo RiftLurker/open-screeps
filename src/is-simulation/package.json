@@ -1,6 +1,6 @@
 {
   "name": "@open-screeps/is-simulation",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Check whether the code is running in simulation",
   "main": "index.js",
   "scripts": {
@@ -49,7 +49,6 @@
     "getLastRelease": "semantic-release-monorepo",
     "publish": [
       "@semantic-release/npm",
-      "@semantic-reelase/git",
       "semantic-release-monorepo/github"
     ]
   }

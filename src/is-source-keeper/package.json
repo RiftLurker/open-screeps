@@ -6,7 +6,7 @@
   "scripts": {
     "test": "tsc && nyc ava",
     "prepare": "npm test",
-    "release": "semantic-release"
+    "release": "semantic-release -e semantic-release-monorepo"
   },
   "repository": {
     "type": "git",
@@ -33,20 +33,13 @@
     "condition-circle": "^2.0.1",
     "nyc": "^11.3.0",
     "semantic-release": "^11.0.2",
-    "semantic-release-monorepo": "^3.1.0",
+    "semantic-release-monorepo": "^4.0.0",
     "typescript": "^2.6.2"
   },
   "publishConfig": {
     "access": "public"
   },
   "release": {
-    "verifyConditions": "condition-circle",
-    "analyzeCommits": "semantic-release-monorepo",
-    "generateNotes": "semantic-release-monorepo",
-    "getLastRelease": "semantic-release-monorepo",
-    "publish": [
-      "@semantic-release/npm",
-      "semantic-release-monorepo/github"
-    ]
+    "verifyConditions": "condition-circle"
   }
 }

@@ -32,7 +32,7 @@
     "ava": "^0.24.0",
     "condition-circle": "^2.0.1",
     "nyc": "^11.3.0",
-    "semantic-release": "^11.0.2",
+    "semantic-release": "^11.1.0",
     "semantic-release-monorepo": "^4.0.0",
     "typescript": "^2.6.2"
   },

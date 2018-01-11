@@ -28,4 +28,8 @@ test('Should only return true for owned rooms', t => {
 	t.true(isMyRoom('W1N1'));
 	t.false(isMyRoom('W2N1'));
 	t.false(isMyRoom('W3N1'));
+	t.false(isMyRoom('E1N1'));
+	t.true(isMyRoom(Game.rooms['W1N1']));
+	t.false(isMyRoom(Game.rooms['W3N1']));
+	t.false(isMyRoom(''))
 });

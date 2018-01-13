@@ -19,14 +19,14 @@ This section will help you writing code for the OpenScreeps project. It is assum
 ##### Edit an existing module
 1. Install dependencies: `npm install`
 2. Make your changes to the module and edit the tests if required
-3. Verify the tests are still passing by executing `npm test`
+3. Verify the tests are still passing by executing `npm ava`
 4. Make sure the readme reflects your changes
 
 ##### Create a new module
 1. Install dependencies: `npm install`
 2. Execute `npm run create` and follow the instructions
-3. Create your module and write relevant test cases
-4. Run the tests by executing `npm test`
+3. Create your module and write relevant ava cases
+4. Run the tests by executing `npm ava`
 5. Make sure the readme is up to date and contains a relevant example
 
 #### Git Commit Messages

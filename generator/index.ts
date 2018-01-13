@@ -1,9 +1,9 @@
-import Generator = require('yeoman-generator');
+import yeomanGenerator = require('yeoman-generator');
 import isScoped = require('is-scoped');
 
 const notEmpty = (input: string) => input.length > 0;
 
-export = class extends Generator {
+export = class extends yeomanGenerator {
 	constructor(args: string | string[], options: {}) {
 		super(args, options);
 	}
@@ -29,7 +29,7 @@ export = class extends Generator {
 				message: 'author:',
 				validate: notEmpty,
 			},
-		]).then(props => {
+		]).then((props) => {
 			const vars = {
 				moduleName: props.moduleName,
 				moduleDescription: props.moduleDescription,
@@ -49,4 +49,4 @@ export = class extends Generator {
 			mv('_tsconfig.json', 'tsconfig.json');
 		});
 	}
-}
+};

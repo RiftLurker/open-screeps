@@ -34,6 +34,10 @@ jobs:
           name: test
           command: yarn test
 
+      - lint:
+          name: lint
+          command: yarn run lint
+
       - deploy:
           name: release
           command: yarn run release || true

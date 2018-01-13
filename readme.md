@@ -19,7 +19,7 @@ You can check the `src/` directory for a list of created modules, the directory 
 - [Lerna][lerna-npm] for managing the monorepo and cross-dependencies
 - [TypeScript][typescript-npm] for statically typed JavaScript
 - [@types/screeps][@types/screeps-npm] for the screeps API type definitions
-- [AVA][ava-npm] as the ava runner
+- [AVA][ava-npm] as the test runner
 - [nyc][nyc-npm] for coverage reports
 
 ## Contributing

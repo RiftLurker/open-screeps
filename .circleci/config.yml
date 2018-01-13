@@ -31,8 +31,8 @@ jobs:
 
       # run tests!
       - run:
-          name: ava
-          command: yarn ava
+          name: test
+          command: yarn test
 
       - run:
           name: lint

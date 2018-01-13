@@ -34,7 +34,7 @@ jobs:
           name: ava
           command: yarn ava
 
-      - lint:
+      - run:
           name: lint
           command: yarn run lint
 

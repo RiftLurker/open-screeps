@@ -5,3 +5,4 @@ yarn.lock
 *.js
 *.js.map
 .nyc_output/
+node_modules/

@@ -1,28 +1,28 @@
-import test from 'ava';
+import ava from 'ava';
 
 import { isMyRoom } from './index';
 
 declare const global: any;
 
-function stubGame(){
+function stubGame() {
 	global.Game = {
 		rooms: {
-			'W1N1': {
+			W1N1: {
 				controller: {
-					my: true
-				}
+					my: true,
+				},
 			},
-			'W2N1': {
+			W2N1: {
 				controller: {
-					my: false
-				}
+					my: false,
+				},
 			},
-			'W3N1': {}
-		}
-	}
+			W3N1: {},
+		},
+	};
 }
 
-test('Should only return true for owned rooms', t => {
+ava('Should only return true for owned rooms', (t) => {
 	stubGame();
 
 	t.true(isMyRoom('W1N1'));
@@ -31,5 +31,5 @@ test('Should only return true for owned rooms', t => {
 	t.false(isMyRoom('E1N1'));
 	t.true(isMyRoom(Game.rooms['W1N1']));
 	t.false(isMyRoom(Game.rooms['W3N1']));
-	t.false(isMyRoom(''))
+	t.false(isMyRoom(''));
 });

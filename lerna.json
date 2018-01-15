@@ -27,6 +27,8 @@
     "nyc",
     "semantic-release",
     "semantic-release-monorepo",
+    "tslint",
+    "tslint-config-airbnb",
     "typescript",
     "yo"
   ]

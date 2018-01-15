@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "lint": "tslint -p ./tsconfig.json",
     "prepare": "tsc"
   },
   "repository": {
@@ -26,6 +27,8 @@
     "yeoman-generator": "^2.0.1"
   },
   "devDependencies": {
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.4.2",
     "typescript": "^2.6.2"
   }
 }

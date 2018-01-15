@@ -1,0 +1,48 @@
+{
+  "name": "@open-screeps/is-creep-alive",
+  "version": "0.0.0-development",
+  "description": "Returns true if the creep is alive",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint -p ./tsconfig.json",
+    "test": "tsc && nyc ava",
+    "prepare": "npm test",
+    "release": "semantic-release -e semantic-release-monorepo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postcrafter/open-screeps.git"
+  },
+  "files": [
+    "index.{d.ts,js,js.map}"
+  ],
+  "keywords": [
+    "screeps",
+    "open-screeps"
+  ],
+  "author": "Adam Laycock &lt;adam&#39;arcath.net&gt;",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/postcrafter/open-screeps/issues"
+  },
+  "homepage": "https://github.com/postcrafter/open-screeps/src/is-creep-alive#readme",
+  "dependencies": {
+    "@types/screeps": "^0.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "condition-circle": "^2.0.1",
+    "nyc": "^11.3.0",
+    "semantic-release": "^11.0.2",
+    "semantic-release-monorepo": "^4.0.0",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.4.2",
+    "typescript": "^2.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
+  }
+}

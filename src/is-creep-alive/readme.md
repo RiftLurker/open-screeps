@@ -14,6 +14,7 @@ const livingCreeps = _.filter(Memory.creepList, (creepName) => isCreepAlive(cree
 ```
 
 ## Related
+- [is-creep-spawning](https://github.com/PostCrafter/open-screeps/tree/master/src/is-creep-spawning)
 - [is-room-visible](https://github.com/PostCrafter/open-screeps/tree/master/src/is-room-visible)
 
 ## License

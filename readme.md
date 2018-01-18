@@ -6,7 +6,7 @@ This repository is a collection of useful snippets and methods that I came up wi
 
 ## Disclaimer
 
-This is still heavily work in progress while I extract modules from my code and get used to different tools. None of the modules are actually on npm yet, even though you could install them manually by cloning the repo and building them locally. The disclaimer will get removed once I've established a workflow and published the packages to npm.
+This is still heavily work in progress while I extract modules from my code and get used to different tools. The disclaimer will get removed once I've established a workflow and published the packages to npm.
 
 ## Usage
 

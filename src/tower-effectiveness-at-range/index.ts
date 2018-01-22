@@ -1,21 +1,7 @@
 export function towerEffectivenessAtRange(
 	range: number,
-	action: 'attack' | 'heal' | 'repair' = 'attack',
+	max: number,
 ): number {
-	let max: number = 0;
-
-	switch (action) {
-	case 'attack':
-		max = TOWER_POWER_ATTACK;
-		break;
-	case 'heal':
-		max = TOWER_POWER_HEAL;
-		break;
-	case 'repair':
-		max = TOWER_POWER_REPAIR;
-		break;
-	}
-
 	if (range <= TOWER_OPTIMAL_RANGE) {
 		return max;
  	}

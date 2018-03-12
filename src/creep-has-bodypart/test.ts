@@ -5,16 +5,16 @@ import { creepHasBodypart } from './index';
 
 declare const global: any;
 
-global._ = lodash
+global._ = lodash;
 
-global.ATTACK = 'attack'
-global.CARRY = 'carry'
-global.CLAIM = 'claim'
-global.MOVE = 'move'
-global.RANGED_ATTACK = 'ranged_attack'
-global.TOUGH = 'tough'
-global.WORK = 'work'
-global.HEAL = 'heal'
+global.ATTACK = 'attack';
+global.CARRY = 'carry';
+global.CLAIM = 'claim';
+global.MOVE = 'move';
+global.RANGED_ATTACK = 'ranged_attack';
+global.TOUGH = 'tough';
+global.WORK = 'work';
+global.HEAL = 'heal';
 
 function stubGame() {
 	global.Game = {
@@ -35,8 +35,8 @@ function stubGame() {
 						type: MOVE,
 						boost: undefined,
 						hits: 100,
-					}
-				]
+					},
+				],
 			},
 		},
 	};
